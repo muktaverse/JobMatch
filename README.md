@@ -1,40 +1,36 @@
-# 💼 JobMatch
+# JobMatch
 
-JobMatch is an interactive resume analysis tool that compares a candidate's resume with a job description and generates an overall job-fit score, skill analysis, and actionable insights.
+JobMatch is a web application that analyzes the compatibility between a resume and a job description using semantic similarity and weighted skill matching.
 
-## 🚀 Features
+## Features
 
-- 📄 Extracts text from uploaded PDF resumes
-- 🔍 Calculates semantic similarity between resume and job description
-- 🧠 Extracts relevant skills from both documents
-- ⚖️ Uses weighted skill matching to prioritize required skills
-- 🎯 Classifies skills as required or preferred
-- 📊 Generates an overall match score
-- 🔎 Identifies matched and missing skills
-- 💡 Provides actionable insights to improve resume-job alignment
-- 🌐 Interactive web interface built with Streamlit
+- PDF resume text extraction
+- Semantic similarity analysis
+- Required and preferred skill classification
+- Weighted skill matching and overall match score
+- Skill gap analysis to identify missing qualifications
+- Automated insights for resume improvement
 
-## 🛠️ Tech Stack
+## Tech Stack
 
-- Python
-- Streamlit
-- Scikit-learn
-- Sentence Transformers
-- PyMuPDF
+Python, Streamlit, Scikit-learn, Sentence Transformers, PyMuPDF
 
-## 📈 How It Works
+## Run Locally
 
-```text
-Resume PDF
-    ↓
-Text Extraction
-    ↓
-Skill Extraction ──────────┐
-                           ↓
-Job Description → Skill Classification
-                           ↓
-             Semantic + Skill Matching
-                           ↓
-                  Overall Match Score
-                           ↓
-             Skill Gap + Insights
+Clone the repository:
+
+```bash
+git clone https://github.com/muktaverse/JobMatch.git
+cd JobMatch
+```
+
+Install dependencies and run:
+
+```bash
+pip install -r requirements.txt
+streamlit run app.py
+```
+
+## Author
+
+Mukta Shree Pathak
